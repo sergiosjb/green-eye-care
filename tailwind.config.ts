@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,15 +53,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Plant health status colors
+				healthy: {
+					DEFAULT: 'hsl(var(--healthy))',
+					foreground: 'hsl(var(--healthy-foreground))'
+				},
+				attention: {
+					DEFAULT: 'hsl(var(--attention))',
+					foreground: 'hsl(var(--attention-foreground))'
+				},
+				critical: {
+					DEFAULT: 'hsl(var(--critical))',
+					foreground: 'hsl(var(--critical-foreground))'
 				}
 			},
 			borderRadius: {
@@ -88,7 +92,10 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'grow': 'grow 0.6s ease-out',
+				'leaf-sway': 'leaf-sway 3s ease-in-out infinite',
+				'pulse-green': 'pulse-green 2s infinite'
 			}
 		}
 	},
